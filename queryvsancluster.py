@@ -24,7 +24,7 @@ def main():
     if args.password:
         password = args.password
     else:
-        password = getpass.getpass(prompt='Enter password for host %s and user %s: ' % (args.host, args.user))
+        password = getpass.getpass(prompt='Enter password for host {} and user {}: '.format(args.host, args.user))
 
     context = ssl.create_default_context()
     context.check_hostname = False
@@ -40,6 +40,7 @@ def main():
     vcc.get_cluster_vsan_capacity()
     vcc.get_health_status()
     vcc.get_cluster_hcl_info()
+    vcc.get_cluster_vms()
 
 
 if __name__ == "__main__":
