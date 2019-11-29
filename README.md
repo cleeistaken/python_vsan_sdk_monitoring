@@ -46,6 +46,8 @@ Note: This code assumes the target is a vCenter and the cluster has vSAN enabled
 * Cluster and host health
 * Storage controller HCL status
 
+### 0.2
+* vSAN object health and compliance
 
 
 ## References
